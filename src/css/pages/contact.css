@@ -1,0 +1,66 @@
+/*------------------------------------*\
+  #Contact
+\*------------------------------------*/
+
+.Contact {
+
+  &__item {
+
+    margin-bottom: var(--bsu);
+
+    @media(--sm) {
+
+      margin-bottom: 0;
+
+    }
+  }
+
+  &__content {
+
+    max-width: 280px;
+
+  }
+
+  &__social {
+
+    margin-top: var(--bsu);
+
+    & li { 
+
+      margin-bottom: var(--bsu-sm);
+
+    }
+
+    & svg {
+
+      transition: color var(--trans);
+      margin-right: 15px;
+
+    }
+
+    & span {
+
+      transition: border var(--trans);
+      border-bottom: thin solid var(--black);
+
+    }
+
+    & a:hover {
+
+      & svg {
+
+        color: color( var(--black) a(25%) );
+
+      }
+
+      & span {
+
+        border-bottom-color: color( var(--black) a(25%) );
+
+      }
+
+    }
+
+  }
+
+}

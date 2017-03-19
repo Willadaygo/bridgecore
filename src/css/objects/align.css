@@ -1,0 +1,72 @@
+/*------------------------------------*\
+  #Alignments
+\*------------------------------------*/
+
+/**
+ * Media classes
+ */
+
+/* Box Alignment */
+
+.align {
+
+  display: flex;
+  flex-flow: column nowrap;
+
+}
+
+.align--top-left, 
+.align--top-center, 
+.align--top-right {
+
+  justify-content: flex-start;
+
+}
+
+.align--center-left, 
+.align--center-center, 
+.align--center-right {
+
+  justify-content: center;
+
+}
+
+.align--bottom-left, 
+.align--bottom-center, 
+.align--bottom-right {
+
+  justify-content: flex-end;
+
+}
+
+.align--top-left,
+.align--center-left,
+.align--bottom-left {
+
+  text-align: left;
+  align-items: flex-start;
+
+}
+
+.align--top-center,
+.align--center-center,
+.align--bottom-center {
+
+  text-align: center;
+  align-items: center;
+
+}
+
+.align--top-right,
+.align--center-right,
+.align--bottom-right {
+
+  text-align: right;
+  align-items: flex-end;
+  
+}
+
+/* Text Alignment */
+.text-left { text-align: left }
+.text-center { text-align: center }
+.text-right { text-align: right }

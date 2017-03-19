@@ -1,0 +1,65 @@
+
+$underline-position: 1.075em;
+$underline-color: currentColor;
+$underline-color-hover: var(--black);
+$underline-color-shadow: var(--white);
+$underline-thickness: 1px;
+
+p a {
+
+  color: #1FE0CB;
+  /**
+  * Layers multple text-shadows on top of 
+  * each other steching outwards horizontally.
+  **/
+  text-shadow:
+    0 -.02em $underline-color-shadow, /* top */
+    0 .02em $underline-color-shadow, /* bottom */
+
+    0 -.05em $underline-color-shadow, /* top */
+    0 .05em $underline-color-shadow, /* bottom */
+
+    0 -.07em $underline-color-shadow, /* top */
+    0 .07em $underline-color-shadow, /* bottom */
+
+     .03em 0 $underline-color-shadow, /* right */
+    -.03em 0 $underline-color-shadow, /* left */
+     .03em -.03em $underline-color-shadow, /* top right */
+    -.03em -.03em $underline-color-shadow, /* top left */
+    -.03em .03em $underline-color-shadow, /* bottom left */
+     .03em .03em $underline-color-shadow, /* bottom right */
+
+     .06em 0 $underline-color-shadow, /* right */
+    -.06em 0 $underline-color-shadow, /* left */
+
+     .09em 0 $underline-color-shadow, /* right */
+    -.09em 0 $underline-color-shadow, /* left */
+
+     .12em 0 $underline-color-shadow, /* right */
+    -.12em 0 $underline-color-shadow; /* left */
+
+  background-color: transparent;
+  background-image:
+    linear-gradient($underline-color, $underline-color), /* tiny additional underline left */
+    linear-gradient($underline-color, $underline-color), /* tiny additional underline right */
+    linear-gradient($underline-color, $underline-color); /* main underline */
+
+    /**
+    * Use ems instead of pixel if you want 
+    * the underline height to be responsive 
+    * to font-size.
+    **/
+  background-size:
+    0 $underline-thickness, /* tiny additional underline left */
+    0 $underline-thickness, /* tiny additional underline right */
+    $underline-thickness $underline-thickness; /* main underline */
+  background-repeat: 
+    no-repeat, /* tiny additional underline left */
+    no-repeat, /* tiny additional underline right */
+    repeat-x;  /* main underline */
+  background-position: 
+    0%    $underline-position,   /* tiny additional underline left */
+    100%  $underline-position,   /* tiny additional underline right */
+    0%    $underline-position;   /* main underline */
+
+}

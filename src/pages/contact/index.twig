@@ -1,0 +1,75 @@
+{% extends 'includes/layout.twig' %}
+
+{% block page %}
+
+  <section class="Contact  block  wrapper">
+
+    <div class="grid">
+
+      <div class="Contact__item  grid__item  u-1/4@sm">
+        <div class="Contact__content">
+          <h2>New Business</h2>
+          <p>If you’d like to talk to us about a new business enquiry, please contact Paul Stafford at +44 (0)20 7490 8954 or paul@design.studio</p>
+        </div>
+      </div>
+
+      <div class="Contact__item  grid__item  u-1/4@sm">
+        <div class="Contact__content">
+          <h2>Careers</h2>
+          <p>For job openings and internship enquiries,  please submit your portfolio to work@design.studio or interns@design.studio</p>
+        </div>
+      </div>
+
+      <div class="Contact__item  grid__item  u-1/4@sm">
+        <div class="Contact__content">
+          <h2>Press</h2>
+          <p>If you’d like to talk to us about using our work for press related purposes please contact Paul Stafford at paul@design.studio</p>
+        </div>
+      </div>
+
+      <div class="Contact__item  grid__item  u-1/4@sm">
+        <ul class="Contact__social">
+        
+          <li>
+            <a href="">
+              {% include 'includes/svg' with { 
+                class: 'i-social',
+                title: 'Social',
+                file: 'icon-twitter'
+              } %}
+              <span>Follow</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="">
+              {% include 'includes/svg' with { 
+                class: 'i-social',
+                title: 'Social',
+                file: 'icon-instagram'
+              } %}
+              <span>Follow</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="">
+              {% include 'includes/svg' with { 
+                class: 'i-social',
+                title: 'Social',
+                file: 'icon-facebook'
+              } %}
+              <span>Like</span>
+            </a>
+          </li>
+
+        </ul>
+      </div>
+
+    </div>
+
+  </section>
+
+  {% include 'modules/studio' %}
+
+{% endblock %}

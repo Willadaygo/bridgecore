@@ -1,0 +1,100 @@
+{% extends 'includes/layout.twig' %}
+
+{% block page %}
+
+  {#{% include 'modules/hero' %}
+
+  {% include 'modules/image-full' %}
+
+  {% include 'modules/quote' %}
+
+  {% include 'modules/stats' %}
+
+  {% include 'modules/press' %}
+
+  {% include 'modules/threesome' %}
+
+  {% include 'modules/carousel-full' %}
+
+  {% include 'modules/stack' %}
+  
+  {% include 'modules/carousel' %}
+
+  {% include 'modules/carousel-overflow' %}#}
+    
+  <section class="block  wrapper">
+
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+
+    <p class="t-lede">Hello, we are <strong>DesignStudio</strong>.<br>
+    Today we're talking to SXSW<br>
+    Watch live <a href="#">dsgn.std/12908</a></p>
+
+    <p>Lorem ipsum dolor sit amet, <a href="#">consectetur adipisicing elit.</a> Voluptatibus culpa porro placeat, doloremque ex aliquid, dolorem ut animi veritatis fugit, corrupti laudantium obcaecati debitis praesentium doloribus voluptate officia minima. Dolorum!</p>
+
+    <blockquote>
+      <p>You guys literally unlocked and inspired us about what was really possible</p>
+    </blockquote>
+
+    <p class="t-small">Footer text - Site by Ragged Edge</p>
+
+    {% include 'includes/svg' with { 
+      class: 'i-social',
+      title: 'Social',
+      file: 'icon-twitter'
+    } %}
+
+    {% include 'includes/svg' with { 
+      class: 'i-social',
+      title: 'Social',
+      file: 'icon-instagram'
+    } %}
+
+    {% include 'includes/svg' with { 
+      class: 'i-social',
+      title: 'Social',
+      file: 'icon-facebook'
+    } %}
+
+    {% include 'includes/svg' with { 
+      class: 'i-social',
+      title: 'Social',
+      file: 'icon-spotify'
+    } %}
+
+    {% include 'includes/svg' with { 
+      class: 'i-social',
+      title: 'Social',
+      file: 'icon-linkedin'
+    } %}
+
+    <div class="grid  grid--rigid">
+
+      <div class="grid__item  u-1/2@sm">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque culpa velit dicta labore libero, recusandae nam minima praesentium error nemo quasi veritatis eveniet, amet, distinctio sit aut nostrum placeat eos!</p>
+      </div>
+
+      <div class="grid__item  u-1/2@sm">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque culpa velit dicta labore libero, recusandae nam minima praesentium error nemo quasi veritatis eveniet, amet, distinctio sit aut nostrum placeat eos!</p>
+      </div>
+
+      <div class="grid__item  u-1/2 ">
+        <div class="media  media--landscape">
+        </div>
+      </div>
+
+      <div class="grid__item  u-1/2 ">
+        <div class="media  media--landscape">
+        </div>
+      </div>
+
+    </div>
+    
+  </section>
+      
+{% endblock %}

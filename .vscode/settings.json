@@ -1,0 +1,8 @@
+{
+  "editor.renderIndentGuides": true,
+  "files.exclude": {
+    ".vagrant": true,
+    "**/vendor": true,
+    // "app": true
+  }
+}

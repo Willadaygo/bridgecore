@@ -1,0 +1,19 @@
+/*------------------------------------*\
+  #Theme classes
+\*------------------------------------*/
+
+/**
+ * Themes.
+ */
+
+.theme-light {
+
+
+}
+
+.theme-dark {
+  
+  color: var(--white);
+  background-color: var(--black);
+
+}

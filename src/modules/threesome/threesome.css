@@ -1,0 +1,107 @@
+@import "settings/vars";
+
+/*------------------------------------*\
+  #Threesome
+\*------------------------------------*/
+
+.Threesome {
+
+  &__grid {
+
+    margin: -calc( .5/ 14 * 100% );
+
+    & > .grid__item {
+
+      padding: calc( .5/ 15 * 100% );
+    
+    }
+
+    @media(--xs) {
+
+      margin: -calc( .25/ 14 * 100% );
+
+      & > .grid__item {
+
+        padding: calc( .25/ 15 * 100% );
+      
+      }
+    }
+
+    @media(--sm) {
+
+      margin: -calc( .25/ 16 * 100% );
+
+      & > .grid__item {
+
+        padding: calc( .25/ 17 * 100% );
+      
+      }
+    }
+
+    @media(--lg) {
+
+      margin: -calc( .175/ 16 * 100% );
+
+      & > .grid__item {
+
+        padding: calc( .175/ 17 * 100% );
+      
+      }
+    }
+
+  }
+
+  &__item {
+
+    position: relative;
+    margin-bottom: calc( var(--bsu-lg) - 27px );
+    
+    @media (--xs) {
+
+      width: calc(1/2 * 100%); 
+      
+    }
+
+    @media (--sm) {
+
+      width: calc(1/3 * 100%); 
+      margin-bottom: calc( var(--bsu-xl) - 25px );
+      
+    }
+
+    @media (--lg) {
+
+      width: calc(1/4 * 100%); 
+      
+    }
+
+  }
+
+  &__overlay {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+  }
+
+  &__title {
+
+    margin-top: calc( var(--bsu-sm) );
+    margin-bottom: calc( var(--bsu-sm)/2 - 5px );
+
+    @media (--sm) {
+
+      margin-top: calc( var(--bsu) - 10px );
+
+    }
+
+  }
+
+  &__copy {
+
+    max-width: 15.8em;
+
+  }
+}

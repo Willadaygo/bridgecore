@@ -1,0 +1,73 @@
+/*------------------------------------*\
+  #Forms
+\*------------------------------------*/
+
+/**
+ * Autofill override
+ */
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus
+input:-webkit-autofill, 
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+
+  -webkit-text-fill-color: var(--black);
+  -webkit-box-shadow: 0 0 0px 1000px var(--white) inset;
+
+}
+
+input::-ms-clear {
+
+  display: none;
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+textarea,
+select {
+
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  outline: 0;
+  font-size: 18px;
+  line-height: calc(30/16);
+  letter-spacing: .05em;
+  text-transform: none;
+  padding: 1em;
+  outline: none;
+  border: thin solid currentColor;
+
+  &::placeholder {
+
+    opacity: 1;
+    text-overflow: ellipsis;
+    transition: opacity var(--trans);
+
+  }
+
+  &:focus::placeholder {
+
+    opacity: 0;
+    
+  }
+}
+
+
+
+/**
+ * Form.
+ */
+
+.form {
+
+}

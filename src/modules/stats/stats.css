@@ -1,0 +1,26 @@
+@import "settings/vars";
+
+/*------------------------------------*\
+  #Stats
+\*------------------------------------*/
+
+.Stats {
+
+  &__item {
+
+    @media(--smMax) {
+
+      & + & {
+
+        margin-top: var(--bsu);
+
+      }
+    }
+  }
+
+  &__copy {
+
+    max-width: calc( var(--columnPX) * 2 );
+
+  }
+}

@@ -1,0 +1,41 @@
+/*------------------------------------*\
+  #Buttons
+\*------------------------------------*/
+
+/**
+ * Button.
+ */
+
+.button {
+
+  display: inline-block;
+  vertical-align: middle;
+  font: inherit;
+  text-align: center;
+  margin: 0;
+  cursor: pointer;
+  padding: 1em;
+  transition: var(--trans);
+  user-select: none;
+
+  font-size: 16px;
+  line-height: 1;
+  
+  min-width: 108px;
+  color: var(--white);
+  border: 1px solid var(--white);
+  background-color: transparent;
+
+  &:hover {
+
+  }
+
+  &:disabled,
+  &:disabled:hover {
+
+    opacity: .2;
+    cursor: default;
+    pointer-events: none;
+    
+  }
+}

@@ -1,0 +1,33 @@
+/*------------------------------------*\
+  #Blocks
+\*------------------------------------*/
+
+.block {
+
+  padding-top: calc( var(--bsu-lg) - var(--bsu-sm) );
+  padding-bottom: var(--bsu-lg);
+
+  @media(--sm) {
+
+    padding-top: calc( var(--bsu-xl) - var(--bsu-sm) );
+    padding-bottom: var(--bsu-xl);
+
+  }
+
+  @nest .Main > &:first-of-type {
+
+    padding-top: var(--header-height-small);
+
+    @media(--sm) {
+
+      padding-top: var(--header-height-large);
+
+    }
+  }
+
+  & .Carousel {
+
+    padding: 0;
+    
+  }
+}

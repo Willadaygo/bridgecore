@@ -1,0 +1,19 @@
+@import "settings/vars";
+
+/*------------------------------------*\
+  #Quote
+\*------------------------------------*/
+
+.Quote {
+
+  text-align: center;
+
+  &__copy {
+
+    max-width: 21em;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+  
+}

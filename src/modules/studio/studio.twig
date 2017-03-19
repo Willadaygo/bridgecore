@@ -1,0 +1,97 @@
+<link rel="stylesheet" href="/css/studio.css" type="text/css"><script> </script>
+
+<section class="Studio  Studio--left  block  wrapper">
+
+  <div class="grid">
+
+    <div class="Studio__itemMedia  grid__item  u-11/16@sm">
+
+        <div class="grid  grid--right">
+
+          <div class="Studio__carousel  grid__item">
+            {% include 'modules/carousel' %}
+          </div>
+
+          <div class="Studio__map  grid__item">
+            <div class="media  media--landscape"></div>
+          </div>
+
+      </div>
+    </div>
+
+    <div class="Studio__itemText  grid__item  u-4/16@sm">
+      <h2>London</h2>
+      <p>
+        <a href="">
+          <address>
+            3 Dufferin Street<br>
+            London<br>
+            EC1Y 8NA
+          </address>
+        </a/>
+      </p>
+      <p>
+        <a href="#">london@design.studio</a><br>
+        <a href="tel:">+44 (0)20 7490 8954</a>
+      </p>
+
+      <div class="Studio__clock  active">
+        {% include 'modules/clock' with { location: 'london' } %}
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="Studio  Studio--right  block  wrapper">
+
+  <div class="grid">
+
+    <div class="Studio__itemText  grid__item  u-4/16@sm">
+      <h2>San Francisco</h2>
+      <p>
+        <a href="">
+          <address>
+            9 Decatur Street<br>
+            San Francisco<br>
+            CA 94103
+          </address>
+        </a/>
+      </p>
+      <p>
+        <a href="#">sf@design.studio</a><br>
+        <a href="tel:">+1 (415) 796 0359</a>
+      </p>
+
+      <div class="Studio__clock  active">
+        {% include 'modules/clock' with { location: 'sanfran' } %}
+      </div>
+
+    </div>
+
+    <div class="Studio__itemMedia  grid__item  u-11/16@sm">
+
+      <div class="grid">
+
+        <div class="Studio__carousel  grid__item">
+          {% include 'modules/carousel' %}
+        </div>
+
+        <div class="Studio__map  grid__item">
+          <div class="media  media--landscape"></div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/locales.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.3.0/moment-timezone.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.3.0/moment-timezone-utils.min.js"></script>

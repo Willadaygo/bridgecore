@@ -1,0 +1,58 @@
+<link rel="stylesheet" href="/css/carousel.css" type="text/css"><script> </script>
+
+<div class="overlay is-openx">
+
+  <div class="overlay__scroll">
+
+    <div class="overlay__outer">
+      <div class="overlay__inner">
+
+        <div class="overlay__container">
+
+          <section class="Carousel  Carousel--overlay  Carousel--overflow  wrapper  block">
+
+            <div class="Carousel__container  swiper-container">
+
+              <div class="swiper-wrapper">
+
+                <div class="Carousel__item  swiper-slide">
+                    <img src="/imgs/stack1.png" alt="">
+                </div>
+                <div class="Carousel__item  swiper-slide">
+                    <img src="/imgs/stack2.png" alt="">
+                </div>
+                <div class="Carousel__item  swiper-slide">
+                    <img src="/imgs/stack3.png" alt="">
+                </div>
+                <div class="Carousel__item  swiper-slide">
+                    <img src="/imgs/stack4.png" alt="">
+                </div>
+                <div class="Carousel__item  swiper-slide">
+                    <img src="/imgs/stack5.png" alt="">
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="Carousel__pagination  swiper-container">
+            
+              <div class="swiper-wrapper">
+
+                {% for i in 1..5 %}
+                  <div class="swiper-slide  Carousel__pagination__bullet"></div>
+                {% endfor %}
+
+              </div>
+            
+            </div>
+
+          </section>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+

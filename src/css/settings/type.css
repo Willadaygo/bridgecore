@@ -1,0 +1,216 @@
+/*------------------------------------*\
+  #Typography
+\*------------------------------------*/
+
+/**
+ * Fonts.
+ */
+
+@font-face {
+  font-family: "Apercu";
+  src: local('apercu-light'), url('/fonts/apercu-light-webfont.woff') format('woff');
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Apercu";
+  src: local('apercu-medium'), url('/fonts/apercu-medium-webfont.woff') format('woff');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Apercu";
+  src: local('apercu-bold'), url('/fonts/apercu-bold-webfont.woff') format('woff');
+  font-style: normal;
+  font-weight: bold;
+}
+
+
+
+/**
+ * Headings.
+ */
+
+h1, .t-h1,
+h2, .t-h2,
+h3, .t-h3,
+h4, .t-h4,
+h5, .t-h5,
+h6, .t-h6 {
+  
+  font-weight: normal;
+  letter-spacing: -.02em;
+
+}
+
+h1, .t-h1 {
+
+  font-size: 30px;
+  line-height: calc(45/30);
+  font-weight: normal;
+
+  @media(--sm) {
+
+    font-size: 40px;
+
+  }
+}
+
+h2, .t-h2 {
+
+  font-size: 22px;
+  line-height: calc(48/30);
+  margin-bottom: var(--bsu);
+
+  @media(--sm) {
+
+    font-size: 30px;
+
+  }
+
+  & + p {
+
+    margin-top: -12px;
+
+  }
+}
+
+h3, .t-h3 {
+
+}
+
+h4, .t-h4 {
+
+  font-size: 16px;
+  line-height: calc(24/16);
+  font-weight: bold;
+  margin-bottom: 0;
+
+}
+
+h5, .t-h5 {
+
+ 
+}
+
+h6, .t-h6 {
+
+}
+
+
+/**
+ * Paragraphs.
+ */
+
+p, 
+address, 
+.t-para {
+
+  font-size: 19px;
+  line-height: calc(28/19);
+  margin-bottom: calc( var(--bsu-sm) - 3px );
+  font-weight: 300;
+
+  & a {
+
+    transition: border var(--trans);
+    border-bottom: thin solid var(--black);
+
+    &:hover {
+
+      border-bottom-color: color( var(--black) a(25%) );
+
+    }
+
+  }
+
+}
+
+
+
+/**
+ * Prose.
+ */
+
+hr {
+  border: 0;
+  border-bottom: thin solid white;
+  margin: var(--bsu) auto;
+}
+
+address, em {
+  font-style: normal;
+}
+
+small {
+  font-size: 70%;
+}
+
+strong, b {
+  font-weight: bold;
+}
+
+i {
+  font-style: normal;
+}
+
+sup {
+  font-size: 60%;
+  top: -.4em;
+}
+
+sub {
+  font-size: 60%;
+  bottom: 0;
+}
+
+
+
+/**
+ * Quote styling.
+ */
+
+q {
+  font-style: italic;
+  quotes: "‘" "’";
+
+  &:before {
+    content: open-quote;
+  }
+
+  &:after {
+    content: close-quote;
+  }
+}
+
+blockquote {
+  quotes: "‘" "’";
+  & p {
+    position: relative;
+    font-size: 26px;
+    line-height: calc(60/48);
+    font-weight: 300;
+    letter-spacing: -.02em;
+    margin-bottom: calc( var(--bsu-sm) / 2 );
+
+    @media(--sm) {
+
+      font-size: 48px;
+
+    }
+
+    &:before {
+      content: open-quote;
+    }
+    &:after {
+      content: no-close-quote;
+    }
+    &:last-of-type {
+      &:after {
+        content: close-quote;
+      }
+    }
+  }
+}

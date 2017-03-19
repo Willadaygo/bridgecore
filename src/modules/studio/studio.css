@@ -1,0 +1,129 @@
+@import "settings/vars";
+
+/*------------------------------------*\
+  #Studio
+\*------------------------------------*/
+
+.Studio {
+
+  &__itemMedia {
+
+    @media(--smMax) {
+
+      order: 1;
+
+    }
+
+  }
+
+  & .Carousel {
+
+    @media(--smMax) {
+
+      margin-left: -calc( 2/14 * 100% );
+      margin-right: -calc( 2/14 * 100% );
+      
+    }
+
+  }
+
+  & .Carousel__caption {
+
+    display: none;
+
+  }
+
+  
+
+  & .media {
+
+    margin-bottom: 0;
+
+  }
+
+  &__carousel {
+
+    @media(--smMax) {
+      margin-bottom: var(--bsu-xl);
+    }
+    
+  }
+
+  &__map {
+
+    display: none;
+
+    @media(--sm) {
+
+      display: block;
+      z-index: 1;
+      width: calc( 5/11 * 100% );
+      margin-top: -calc( 1/11 * 100%);
+
+    }
+  }
+
+  &__clock {
+
+    position: relative;
+    z-index: 2;
+    text-align: right;
+    margin-bottom: -var(--bsu-sm);
+
+    @media(--sm) {
+
+      text-align: left;
+      margin-top: calc( 2/4 * 100%);
+      margin-left: calc( 1/4 * 100%);
+
+    }
+
+  }
+
+  &--left {
+
+    & .Carousel__pagination {
+
+      right: calc( 2/18 * 100% );
+
+      @media(--sm) {
+
+        right: auto;
+        left: -55px;
+      }
+    }
+
+    & .Studio__map {
+
+      @media(--sm) {
+
+        
+        margin-right: -calc( 1/11 * 100%);
+
+      }
+    }
+  }
+
+  &--right {
+
+    & .Carousel__pagination {
+
+      @media(--smMax) {
+
+      right: calc( 2/18 * 100% );
+
+      }
+
+    }
+
+    & .Studio__map {
+
+      @media(--sm) {
+
+        margin-left: -calc( 1/11 * 100%);
+
+      }
+    }
+
+  }
+}

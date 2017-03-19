@@ -1,0 +1,92 @@
+/*------------------------------------*\
+  #Grid
+\*------------------------------------*/
+
+.grid {
+  display: flex;
+  flex: 0 1 auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+
+  .grid__item {
+    width: 100%;
+    flex: 0 0 auto;
+
+    & img {
+      width: 100%;
+    }
+  }
+
+
+
+
+
+/**
+ * Modifiers
+ */
+
+$gutter: 24px;
+
+.grid--rigid {
+
+  margin-left: -$gutter; /* 1 */
+
+  & > .grid__item {
+
+    padding-left: $gutter; /* 2 */
+  
+  }
+}
+  
+.grid--left {
+  justify-content: flex-start;
+}
+
+.grid--right {
+  justify-content: flex-end;
+}
+
+.grid--center {
+  align-items: center;
+}
+
+.grid--middle {
+  justify-content: center;
+}
+
+.grid--bottom {
+  align-items: flex-end;
+}
+
+.grid--reverse {
+  flex-direction: row-reverse;
+}
+
+
+
+
+
+/**
+ * Widths
+ */
+
+.u-1\/2 { width: calc(1/2 * 100%); }
+
+@media (--sm) {
+  
+  .u-1\/2\@sm { width: calc(1/2 * 100%); }
+
+  .u-1\/3\@sm { width: calc(1/3 * 100%); }
+
+  .u-1\/4\@sm { width: calc(1/4 * 100%); }
+  
+  .u-3\/4\@sm { width: calc(3/4 * 100%); }
+
+  .u-4\/16\@sm { width: calc(4/16 * 100%); }
+
+  .u-11\/16\@sm { width: calc(11/16 * 100%); }
+  
+}
+

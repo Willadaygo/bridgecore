@@ -1,0 +1,135 @@
+@import "settings/vars";
+
+/*------------------------------------*\
+  #Clock
+\*------------------------------------*/
+
+.Clock {
+  display: inline-block;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-image: url(/imgs/clock.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+
+  @media(--sm) {
+
+    width: 160px;
+    height: 160px;
+
+  }
+
+  &:after {
+
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) translateZ(0);
+    z-index: 1;
+    width: 4%;
+    height: 4%;
+    border-radius: 50%;
+    background-color: var(--black);
+  }
+
+  &--linear {
+
+    & .Clock__container--minutes {
+      animation: rotate 3600s infinite linear;
+    }
+
+    & .Clock__container--seconds {
+      animation: rotate 60s infinite linear;
+    }
+
+  }
+
+  &--steps {
+
+    & .Clock__container--minutes {
+      animation: rotate 3600s infinite steps(60);
+    }
+
+    & .Clock__container--seconds {
+      animation: rotate 60s infinite steps(60);
+    }
+
+  }
+
+  &--bounce {
+
+    & .Clock__container--minutes {
+      transition: transform 0.3s cubic-bezier(.4,2.08,.55,.44);
+    }
+
+    & .Clock__container--seconds {
+      transition: transform 0.2s cubic-bezier(.4,2.08,.55,.44);
+    }
+
+  }
+
+  &__container {
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    &--hour {
+      animation: rotate 43200s infinite linear;
+    }
+    
+  }
+
+  &__hand {
+
+    position: absolute;
+    background-color: var(--black);
+    width: 1px;
+
+    &--hours {
+
+      height: 26%;
+      left: 49.4%;
+      top: 28.5%;
+      transform-origin: 50% 82%;
+      transform: rotateZ(0deg);
+
+    }
+
+    &--minutes {
+
+      height: 40%;
+      left: 49.4%;
+      top: 14.5%;
+      transform-origin: 50% 88%;
+      transform: rotateZ(0deg);
+
+    }
+
+    &--seconds {
+
+      height: 47.5%;
+      left: 49.4%;
+      top: 7%;
+      transform-origin: 50% 90%;
+      transform: rotateZ(0deg);
+      background-color: color( red a(50%) );
+
+    }
+  }
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotateZ(1turn);
+  }
+}
+.Header, .guide-toggle{
+  /*display: none;*/
+}
