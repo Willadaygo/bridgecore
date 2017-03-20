@@ -10,6 +10,9 @@
   height: 100%;
   min-height: 100vh;
   display: flex;
+  border: 18px solid white;
+  border-left: 24px solid white;
+  border-right: 24px solid white;
   
 
   @media(--sm) {

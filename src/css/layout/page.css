@@ -24,7 +24,7 @@ html {
 body {
   font-family: var(--main-page-font);
   font-weight: normal;
-  background: var(--main-page-bg);
+  background: var(--white);
 }
 
 ::selection {
@@ -34,7 +34,36 @@ body {
 }
 
 .Main {
-  
+
+  position: relative;
+  border-top: var(--border) solid var(--blue);
+  border-bottom: var(--border) solid var(--blue);
+
+  &:before,
+  &:after {
+
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: var(--border);
+    background-color: var(--blue);
+    z-index: 10;
+
+  }
+
+  &:before {
+
+    left: 0;
+
+  }
+
+  &:after {
+
+    right: 0;
+
+  }
   /*padding-top: var(--header-height-small);
 
   @media(--sm) {

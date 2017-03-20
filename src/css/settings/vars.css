@@ -16,7 +16,7 @@
   
   /* Base Spacing Units */
   --bsu-sm:   10px;  
-  --bsu:      20px;    
+  --bsu:      24px;    
   --bsu-lg:   40px;
   --bsu-xl:   80px;
   --bsu-xxl:  120px;
@@ -26,6 +26,7 @@
   --bmw: 1440px;
   --gutter: 24px;
   --columns: 10;
+  --border: 6px;
   
   --column: calc( 
     ( 100% - ( var(--gutter) *  13 ) )
@@ -91,4 +92,4 @@
 @custom-media --bmw    (width >= 1440px);
 @custom-media --bmwMax (width <= 1439px);
 
-@custom-media --xl     (width >= 2000px);
+@custom-media --lg     (width >= 2000px);
